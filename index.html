@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Rahul kumar</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="assets/resume.pdf" download="resume.pdf">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div
+        class="hamburger"
+        id="hamburger"
+        tabindex="0"
+        aria-label="Toggle navigation"
+        role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <section id="about" class="section fade-in-up section-card">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate full-stack developer with experience building dynamic
+        and responsive web applications. Skilled in both frontend and backend
+        technologies, I specialize in creating seamless user experiences
+        combined with robust server-side logic. Proficient in modern frameworks,
+        databases, and DevOps practices, I enjoy solving complex problems
+        through clean, maintainable code. Continuously learning and adapting to
+        new tools and trends, I aim to deliver high-quality software that drives
+        real-world impact.
+      </p>
+    </section>
+
+    <section id="skills" class="section fade-in-up section-card">
+      <h2>Skills &amp; Proficiency</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <span>HTML5</span>
+          <div class="progress">
+            <div class="progress-bar" data-progress="95"></div>
+          </div>
+          <span class="percent">95%</span>
+        </div>
+        <div class="skill">
+          <span>CSS3</span>
+          <div class="progress">
+            <div class="progress-bar" data-progress="80"></div>
+          </div>
+          <span class="percent">80%</span>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress">
+            <div class="progress-bar" data-progress="75"></div>
+          </div>
+          <span class="percent">75%</span>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <div class="progress">
+            <div class="progress-bar" data-progress="60"></div>
+          </div>
+          <span class="percent">60%</span>
+        </div>
+        <div class="skill">
+          <span>Node.js</span>
+          <div class="progress">
+            <div class="progress-bar" data-progress="50"></div>
+          </div>
+          <span class="percent">50%</span>
+        </div>
+        <div class="skill">
+          <span>Express.js</span>
+          <div class="progress">
+            <div class="progress-bar" data-progress="60"></div>
+          </div>
+          <span class="percent">60%</span>
+        </div>
+        <div class="skill">
+          <span>MongoDB</span>
+          <div class="progress">
+            <div class="progress-bar" data-progress="50"></div>
+          </div>
+          <span class="percent">50%</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section2 fade-in-up">
+      <h2 class="project-header">Projects</h2>
+      <div class="projects-grid">
+        <div class="projects-container" id="projects-container">
+          <!-- Project cards will be injected here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section fade-in-up section-card">
+      <h2>Contact</h2>
+      <form id="contactForm" class="needs-validation" novalidate>
+        <div class="col-md-12">
+          <label for="validationCustom01" class="form-label">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            name="name"
+            required />
+        </div>
+        <label for="email" class="form-label">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          required />
+        <label for="message" class="form-label">Message:</label>
+        <textarea
+          id="message"
+          class="form-control"
+          name="message"
+          required></textarea>
+        <button type="submit">Send</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+    <footer>
+      <div class="footer-content">
+        &copy; 2025 Rahul Kumar. All rights reserved.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
